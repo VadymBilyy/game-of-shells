@@ -1,46 +1,21 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
+# To start the App
+`npm run start`
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Description
 
-### `npm test`
+The Game of Shells involves a flat surface, a row of three small containers, and a ball small enough to fit underneath each of them.
+On each turn of the game the player is shown the ball being placed under one of the containers before the order of the containers is repeatedly shuffled at random.
+The player has to guess correctly which container the ball is under in order to win; otherwise they lose.
+Your goal is to develop a playable version of this game with HTML/CSS/JS.
+You can implement it in any way you see fit as long as the end result is playable!
+We aren't expecting a masterpiece of design, as the focus is more on the JS, but the visuals of the application should be of a high enough quality to ensure that a player can watch the shell the ball is under.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+General tips and things to think about:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Animations are important! In this game it is critical that players can follow the shells as they are shuffled.
+- Think about how you would expand the game to add different difficulty settings and more shells, and ensure that your application can be easily modified to allow them.
+- If you write the game in vanilla JS then we'd still expect the JS application to be in control of what's being rendered into the DOM and how it's manipulated.
+   We would therefore expect elements, such as the shells, to be created in the JS application as opposed to written directly in the HTML.
+   Naturally, having a single 'root' element (or two, if you're implementing modals for player messages etc.) for you to 'mount' your application is completely fine!
+   The main point is to implement "UI as a function of state".
