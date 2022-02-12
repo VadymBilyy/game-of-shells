@@ -1,4 +1,4 @@
-import { Button, Paper, Slide } from '@material-ui/core';
+import { Button, Slide } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { shuffleArray } from '../../utils/array.util';
 import { Cup } from '../cup/cup';
